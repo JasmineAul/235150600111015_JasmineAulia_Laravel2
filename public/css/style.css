@@ -1,0 +1,148 @@
+body, h1, h2, h3, p, ul, ol, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    background-color: #99e7e1;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+
+.btn-primary {
+    background-color: rgb(199, 169, 192);
+    border: none;
+    padding: 1px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #b1c1d2;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+
+.card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+.blog-list {
+    padding: 20px;
+}
+
+.blog-list h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.blog-list p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blog-list img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions a, .actions button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.actions a {
+    background-color: #007bff;
+}
+
+.actions button {
+    background-color: #dc3545;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #c82333;
+}
+
+
+footer {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-list {
+        padding: 10px;
+    }
+}
